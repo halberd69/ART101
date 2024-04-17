@@ -34,3 +34,42 @@ h1 {
   border: solid 1px #888;
   background-color: #A3C9A8;
 }
+
+/*code borrowed from Mochi Resources" */
+h1{
+  animation: type 3s steps(27);
+  color: #d7dcea;
+  font-size: 18px;
+  font-family: consolas;
+  white-space: nowrap;
+  overflow: hidden;
+  }
+
+@keyframes type{
+  0%{
+    width:0ch;
+  }
+  
+  100%{
+    width:27ch;
+  }
+}
+
+@keyframes blink{
+  0%{opacity:1;}
+  50%{opacity:0;}
+  100%{opacity:1;}
+}
+
+.vignette {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0px 0px 200px 10px #000000;
+  filter: opacity(50%);
+  pointer-events: none;
+  z-index: 1000;
+  }
+/* end of code borrowed by Mochi Resources */
