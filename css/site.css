@@ -4,46 +4,58 @@
 
 /* we can select an html element tag, in this case "body" will apply to the whole document */
 body {
-  background-color: #50808E;
+  background-color: #f4f9fc;
+  cursor: url('../img/angelwingcursor.gif'), auto;
 }
 
 /* we can have rules apply to multiple elements at the same time with commas */
 h1,h2,h3 {
-  font-family: sans-serif;
+  font-family: monotype;
 }
 
 /* and we can have rules that overlap other rules, both take effect */
-h1 {
-  letter-spacing: 5px;
-  word-spacing: 5px;
-  font-size: 200%;
-}
+
 
 /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
 #content {
   margin: 10px;
   padding: 10px;
-  border: solid 1px #888;
-  background-color: #84B59F;
+  /* border: solid 1px #413c30; */
+  background-color: #f4f9fc;
 }
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {
   padding: 10px;
   margin-bottom: 10px;
-  border: solid 1px #888;
-  background-color: #A3C9A8;
+  border: solid 1px #f0f3f4;
+  border-radius: 10px;
+  background-color: #e0e4e8;
 }
 
-/*code borrowed from Mochi Resources" */
+
 h1{
-  animation: type 3s steps(27);
-  color: #d7dcea;
+  color: #838281;
   font-size: 18px;
-  font-family: consolas;
+  font-family: monotype;
   white-space: nowrap;
   overflow: hidden;
+
+  text-align: center;
+  /*animation code borrowed from Mochi Resources" */
+  animation: type 3s steps(27);
+  letter-spacing: 5px;
+  word-spacing: 5px;
+  font-size: 200%;
   }
+
+h2 {
+  color:#838281
+}
+
+p {
+  color:#91908f  
+}
 
 @keyframes type{
   0%{
