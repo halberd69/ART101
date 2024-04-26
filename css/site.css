@@ -90,3 +90,18 @@ ol{
   z-index: 1000;
   }
 /* end of code borrowed by Mochi Resources */
+
+/* Test code 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+/* Create links
+ul li {
+  float:left;   
+}
+*/
