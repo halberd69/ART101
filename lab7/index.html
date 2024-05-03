@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- This title is used for tabs and bookmarks -->
+	<title>Lab 7 - Functions</title>
+
+	<!-- Use UTF character set, a good idea with any webpage -->
+  	<meta charset="UTF-8" />
+	<!-- Set viewport so page remains consistently scaled w narrow devices -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<!-- Include a sitewide CSS file for consistent styling across the site -->
+	<link rel="stylesheet" type="text/css" href="../css/site.css">
+	<!-- Lab-specifc CSS file for any special styling of this particular page -->
+	<link rel="stylesheet" type="text/css" href="css/lab.css">
+	
+	<!-- load jQuery library to make javascript easier (must be above our lab js)-->
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
+	<!-- <script type="text/javascript" src="./js/lab.js" DEFER></script> -->
+</head>
+<body>
+	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
+	<main id="content">
+		<section>
+			<h1>Lab 7 - Functions</h1>
+			<div class="minor-section">
+					<h2>Challenge</h2>
+					<p>The challenge of this lab was to experiment with writing and calling functions. We practiced defining functions,
+						calling them so they can perform a certain action, as well as calling functions within functions to make code 
+						more efficient and concise.</p>
+			</div>
+
+			<div class="minor-section">
+					<h2>Problems</h2>
+					<p>No problems really arose with this lab, the instructions on the Canvas page were straightforward and easy to follow. </p>
+			</div>
+
+			<div class="minor-section">
+					<h2>Reflection</h2>
+					<p>Out of all the labs so far, I feel like this one was the most challenging to understand. The syntax for calling
+						functions within functions is something I'm not familiar with, and it took some time to understand how the code 
+						was working. The syntax for passing empty arrays through a function was something I didn't catch onto at first, and 
+						was confused why some functions didn't include the '' within the parentheses. For example, this line in the js file 
+						return userName.split('').sort().join('') was confusing at first because I didn't understand why split had to include the 
+						'' symbols while sort didn't. But now I understand, you must include those symbols when passing an array through.
+					</p>
+			</div>
+
+			<div class="minor-section">
+					<h2>Results</h2>
+					<h2>Script Output</h2>
+					<script src="js/lab.js"></script>
+					<div id="output"></div>
+			</div>
+
+			<!-- <div>
+				<h2>Script Output</h2>
+				<script src="js/lab.js"></script>
+			</div> -->
+		</section>
+		<nav id="links">
+			<a href="../index.html"> homepage</a>
+		</nav>
+	</main>
+</body>
+</html>
