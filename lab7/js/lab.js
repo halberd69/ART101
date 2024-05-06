@@ -1,14 +1,13 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// Lab 7: Working with Functions
+// Author: Halei Fung
+// Date: 5/2/2024
 
-// Constants
 
 // Functions
-
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
+// takes a username and sorts it in alphabeticala order
 function sortUserName() {
   const userName = window.prompt("Hi, please tell me your name so I can fix it.");
+  // convert the string into an array
   // let nameArray = userName.split('');
   // //sort the array
   // let nameArraySort = nameArray.sort();
