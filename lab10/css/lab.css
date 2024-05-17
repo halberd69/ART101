@@ -1,11 +1,88 @@
-/* Here we can set styles for this lab page that we don't want to effect others pages */
+body {
+  background-color: #f4f9fc;
+  cursor: url('../img/angelwingcursor.gif'), auto;
+}
+
+/* we can have rules apply to multiple elements at the same time with commas */
+h1,h2,h3 {
+  font-family: monotype;
+}
+
+/* and we can have rules that overlap other rules, both take effect */
+
+
+/* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
+#content {
+  margin: 10px;
+  padding: 10px;
+  /* border: solid 1px #413c30; */
+  background-color: #f4f9fc;
+}
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid 1px #f0f3f4;
+  border-radius: 10px;
+  background-color: #e0e4e8;
+}
+
+
+h1{
+  color: #838281;
+  font-size: 18px;
+  font-family: monotype;
+  white-space: nowrap;
+  overflow: hidden;
+
+  text-align: center;
+  /*animation code borrowed from Mochi Resources" */
+  animation: type 3s steps(27);
+  letter-spacing: 5px;
+  word-spacing: 5px;
+  font-size: 200%;
+  }
+
+h2 {
+  color:#838281
+}
+
+p {
+  color:#91908f  
+}
+
+ol{
+  color:#91908f 
+}
+
+@keyframes type{
+  0%{
+    width:0ch;
+  }
+  
+  100%{
+    width:27ch;
+  }
+}
+
+@keyframes blink{
+  0%{opacity:1;}
+  50%{opacity:0;}
+  100%{opacity:1;}
+}
+
+/*code borrowed by Mochi Resources */
+.vignette {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0px 0px 200px 10px #000000;
+  filter: opacity(50%);
+  pointer-events: none;
+  z-index: 1000;
   }
 
 .text{

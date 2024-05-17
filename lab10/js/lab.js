@@ -20,19 +20,21 @@ function generateRandomText() {
 }
 
 
+// $("#make-convo").click(function(){
+//   const newText = generateRandomText();
+//   $("#output").append('<div class="text"><p>' + newText + '</p></div>');
+// });
+
+//TASK X
 $("#make-convo").click(function(){
+  if (left){
   const newText = generateRandomText();
-  $("#output").append('<div class="text"><p>' + newText + '</p></div>');
+  $("#output").append('<div class = "text"><p>' + newText + '</p></div>');
+  }
+    else{
+    const newText = generateRandomText();
+    $("#output").append('<div class = "text2"><p>' + newText + '</p></div>');
+    }
+  left = !left;
 });
 
-// $("#make-convo").click(function(){
-//   if (left){
-//   const newText = generateRandomText();
-//   $("#output").append('<div class = "text"><p>' + newText + '</p></div>');
-//   }
-//   else{
-//   const newText = generateRandomText();
-//   $("#output").append('<div class = "text2"><p>' + newText + '</p></div>');
-//   }
-//   left = !left;
-// })
