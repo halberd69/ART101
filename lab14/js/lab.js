@@ -29,7 +29,7 @@ function getFactorObj() {
 }
 
 function outputToPage(str) {
-    newEl = document.createElement("p");
+    newEl = document.createElement("span");
     newEl.innerHTML = str;
     outputEl.appendChild(newEl);
 }
@@ -56,11 +56,13 @@ function fizzBuzzBoom(maxNums, factorObj) {
         if (outputStr) {
             outputStr = " - " + outputStr + "!";
         }
-        outputToPage(num.toString() + outputStr)
+
+        if(num > 0 && (num % 5 === 0)) {
+            outputToPage("<br>"); 
+        }
+       outputToPage(num.toString() + outputStr + ' ' + "<span style='width:10px'></span>" + '')
     }
 }
-
-
 
 function reportError(str) {
     outputEl.innerHTML = "<div class='error'>" + str + "</div>";
